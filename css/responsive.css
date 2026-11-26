@@ -3,6 +3,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 img {
@@ -50,6 +51,21 @@ img {
   .hero h1 {
     font-size: clamp(36px, 11vw, 46px);
     overflow-wrap: anywhere;
+    letter-spacing: -.055em;
+  }
+
+  .hero {
+    gap: 12px;
+    padding-top: 44px;
+    padding-bottom: 42px;
+  }
+
+  .hero .eyebrow {
+    font-size: 10px;
+  }
+
+  .lead {
+    line-height: 1.55;
   }
 
   .hero-actions {
@@ -58,6 +74,11 @@ img {
 
   .hero-actions .button {
     flex: 1 1 150px;
+  }
+
+  .hero-actions .button,
+  .nav-cta {
+    white-space: nowrap;
   }
 
   .trust {
@@ -81,12 +102,44 @@ img {
     overflow-wrap: anywhere;
   }
 
+  .section-heading h2 {
+    font-size: clamp(30px, 9vw, 38px);
+  }
+
+  .section-heading.centered > p {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
   .download-card {
     padding: 32px 22px;
   }
 
   .download-card p {
     font-size: 15px;
+  }
+
+  .download-card small {
+    line-height: 1.5;
+  }
+
+  .faq {
+    padding-top: 54px;
+  }
+
+  .faq details {
+    padding: 17px 0;
+  }
+
+  .faq summary {
+    padding-right: 18px;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .faq p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   .footer-inner {
